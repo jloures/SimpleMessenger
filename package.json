@@ -1,0 +1,18 @@
+{
+  "name": "SimpleMessenger",
+  "version": "0.0.1",
+  "description": "A simple messaging app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jloures/SimpleMessenger.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+      
+  }
+}
