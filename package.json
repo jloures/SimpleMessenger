@@ -2,17 +2,30 @@
   "name": "SimpleMessenger",
   "version": "0.0.1",
   "description": "A simple messaging app",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jloures/SimpleMessenger.git"
   },
   "scripts": {
-    "start": "node server.js"
+    "build": "node server.js",
+    "build-dev": "webpack --progress --watch",
+    "build-prod": "webpack -p",
+    "postinstall": "",
+    "clear-node-modules": "rm -rf node_modules/",
+    "start":"env $(cat .env) nodemon index.js & npm run build-dev"
   },
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "webpack": "^2.2.1"
   },
   "devDependencies": {
-      
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "nodemon": "^1.11.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
   }
 }
