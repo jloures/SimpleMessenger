@@ -16,7 +16,7 @@ export class Footer {
         var messageToSend:string = this.messageInput;
         var messageSent:boolean = this.messageService.sendMessage(
           messageToSend, 
-          'Unknown'
+          { name: 'me' }
         );
         if( messageSent === true ) {
           this.messageInput = '';

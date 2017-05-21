@@ -1,5 +1,10 @@
-<div class="content container-fluid">
+<div id="content" class="content container-fluid">
     <div *ngFor="let msg of messages">
-        <span>{{msg.message}}</span>
+        <div [style.float]="getMessagePosition(msg.user_name)" [style.margin-top]="getMarginCorrection(msg.user_name)" [style.margin-bottom]="getMarginCorrection(msg.user_name)" class="content-message-box">
+            <p>{{msg.message}}</p>
+            <p><b>{{msg.user_name}}</b></p>
+        </div>
+        <div *ngIf="msg.user_name == 'me'" class="clearfix">
+        </div>
     </div>
 </div>

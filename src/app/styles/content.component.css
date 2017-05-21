@@ -4,3 +4,26 @@ div.content {
     max-width: 650px;
     overflow-x: auto;
 }
+
+div.content-message-box {
+    width: 230px;
+    border-radius: 5px;
+    background: lightgrey;
+    margin: 15px 0 15px 0;
+    -webkit-animation: fade 1s linear forwards;
+    animation: fade 1s linear forwards;
+    padding: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
