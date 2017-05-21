@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
 
 @Component({
   selector: 'my-app',
-  template: require('./templates/app.component.html')
+  template: `<main><h1>It worked</h1></main>`
 })
-export class AppComponent {
 
+export class AppComponent {
 }

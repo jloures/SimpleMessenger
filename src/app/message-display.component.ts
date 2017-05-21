@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { MessageService } from './message.service';
 
 @Component({
-    selector: 'message-input',
-    template:''
+    selector: 'message-display',
+    template: ''
 })
-export class MessageInput {   
+
+export class MessageDisplay {
     private messageService : MessageService;
     constructor(private mService: MessageService) {
         this.messageService = mService;
