@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { MessageService } from "../services/message.service";
 
 @Component({
   selector: 'footer',
@@ -9,9 +10,16 @@ import { Component, Input } from '@angular/core';
 export class Footer {
     @Input() messageInput: string;
 
+    constructor(private messageService: MessageService) {}
+
     onEnter() {
         var messageToSend:string = this.messageInput;
-        this.messageInput = '';
-        console.log(messageToSend);
+        var messageSent:boolean = this.messageService.sendMessage(
+          messageToSend, 
+          'Unknown'
+        );
+        if( messageSent === true ) {
+          this.messageInput = '';
+        }
     }
 }
