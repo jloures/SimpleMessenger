@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: '',
+  selector: 'content',
   template: `
+    <div class="content container-fluid">
+    </div>
   `,
   styles: [`
   `]
 })
 
-export class AppComponent {
+export class Content {
 }

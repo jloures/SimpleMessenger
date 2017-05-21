@@ -4,10 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { Header } from './header.component';
+import { Footer } from './footer.component';
+import { Content } from './content.component';
+
 import { MessageService } from './message.service';
 
 @NgModule({
-  imports: [ BrowserModule ],
+  imports: [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, Footer, Header, Content ],
   providers: [ MessageService ],
   bootstrap: [ AppComponent ]
