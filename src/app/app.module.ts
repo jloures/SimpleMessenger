@@ -2,12 +2,12 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
-import { Header } from './header.component';
-import { Footer } from './footer.component';
-import { Content } from './content.component';
+import { AppComponent } from './components/app.component';
+import { Header } from './components/header.component';
+import { Footer } from './components/footer.component';
+import { Content } from './components/content.component';
 
-import { MessageService } from './message.service';
+import { MessageService } from './services/message.service';
 
 @NgModule({
   imports: [ BrowserModule, FormsModule ],

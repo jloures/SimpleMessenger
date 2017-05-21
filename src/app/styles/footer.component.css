@@ -1,0 +1,12 @@
+div.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+div.msg-box {
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    max-width: 650px;
+    margin-bottom: 30px;
+}

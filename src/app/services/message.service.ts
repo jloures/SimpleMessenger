@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class MessageService {
-    private messages = [];
+    private messages:Array<string> = [];
     constructor() {}
-    getMessages() {
+    getMessages():Array<string> {
         return this.messages;
     }
     sendMessage(msg: string) {

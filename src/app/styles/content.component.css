@@ -1,0 +1,6 @@
+div.content {
+    height: calc(100% - 155px);
+    border: 3px solid black;
+    max-width: 650px;
+    overflow-x: auto;
+}
