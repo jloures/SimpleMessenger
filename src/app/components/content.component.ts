@@ -11,7 +11,7 @@ import { Message } from '../message';
 })
 
 export class Content implements OnInit {
-  private messages:Array<Message>;
+  public messages:Array<Message>;
   private current_user:User = { name: 'me' }
   ngOnInit(): void {
     this.messages = this.messageService.getMessages();
