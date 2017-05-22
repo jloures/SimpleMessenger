@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "preinstall": "npm install -g @angular/cli",
+    "preinstall": "npm install -g @angular/cli & npm install -g @angular/compiler-cli",
     "postinstall": "ng build --aot -prod",
     "test": "ng test",
     "lint": "ng lint",
