@@ -12,7 +12,7 @@ export class Footer {
 
     constructor(private messageService: MessageService) {}
 
-    onEnter() {
+    sendMessage() {
         var messageToSend:string = this.messageInput;
         var messageSent:boolean = this.messageService.sendMessage(
           messageToSend, 
