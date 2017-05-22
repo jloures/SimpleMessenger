@@ -2,11 +2,11 @@
   "name": "simple-messenger",
   "version": "0.0.0",
   "license": "MIT",
+  "angular-cli": {},
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "postinstall": "npm run build",
+    "postinstall": "ng build --target=production -e ${NODE_ENV:-production} --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
