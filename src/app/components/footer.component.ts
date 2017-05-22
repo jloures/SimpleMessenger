@@ -3,8 +3,8 @@ import { MessageService } from "../services/message.service";
 
 @Component({
   selector: 'footer',
-  templateUrl: 'src/app/templates/footer.component.html',
-  styleUrls: ['src/app/styles/footer.component.css']
+  templateUrl: '../templates/footer.component.html',
+  styleUrls: ['../styles/footer.component.css']
 })
 
 export class Footer {
@@ -15,7 +15,7 @@ export class Footer {
     sendMessage() {
         var messageToSend:string = this.messageInput;
         var messageSent:boolean = this.messageService.sendMessage(
-          messageToSend, 
+          messageToSend,
           { name: 'me' }
         );
         if( messageSent === true ) {

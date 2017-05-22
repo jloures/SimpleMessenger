@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { MessageService } from "../services/message.service";
 import { User } from '../user';
 
-import { Message } from '../message'; 
+import { Message } from '../message';
 
 @Component({
   selector: 'content',
-  templateUrl: 'src/app/templates/content.component.html',
-  styleUrls: ['src/app/styles/content.component.css']
+  templateUrl: '../templates/content.component.html',
+  styleUrls: ['../styles/content.component.css']
 })
 
 export class Content implements OnInit {
