@@ -26,6 +26,10 @@ export class MessageService {
     sendMessage(msg: string, user: User): boolean {
         //this shouldn't be here
         //I'll deal with this later on
+        if( msg === '' ) {
+          //don't do anything
+          return true;
+        }
         var objDiv = document.getElementById("content");
         objDiv.scrollTop = objDiv.scrollHeight;
 
